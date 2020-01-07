@@ -1,4 +1,5 @@
-﻿using SQLite;
+﻿using Plugin.Geolocator;
+using SQLite;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,6 +8,7 @@ using System.Threading.Tasks;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using XamarinGoogleMapApp.Logic;
 using XamarinTest.Model;
 
 namespace XamarinTest
@@ -18,6 +20,14 @@ namespace XamarinTest
 		{
 			InitializeComponent ();
 		}
+        protected override async void OnAppearing()
+        {
+            base.OnAppearing();
+            var locator = CrossGeolocator.Current;
+            var position = await locator.GetPositionAsync();
+
+            var venues = VenueLogic.GetVenues(position.Latitude, position.Longitude);
+        }
 
         private void ToolbarItem_Clicked(object sender, EventArgs e)
         {
