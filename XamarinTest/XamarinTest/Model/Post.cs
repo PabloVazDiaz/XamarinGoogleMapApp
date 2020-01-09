@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace XamarinTest.Model
+namespace XamarinTravelApp.Model
 {
     public class Post
     {

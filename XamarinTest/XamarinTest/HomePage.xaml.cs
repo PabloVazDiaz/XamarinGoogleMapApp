@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace XamarinTest
+namespace XamarinTravelApp
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class HomePage : TabbedPage

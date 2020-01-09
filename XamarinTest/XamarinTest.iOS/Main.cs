@@ -5,7 +5,7 @@ using System.Linq;
 using Foundation;
 using UIKit;
 
-namespace XamarinTest.iOS
+namespace XamarinTravelApp.iOS
 {
     public class Application
     {

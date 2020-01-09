@@ -13,7 +13,7 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 
-namespace XamarinTest.UWP
+namespace XamarinTravelApp.UWP
 {
     public sealed partial class MainPage
     {
@@ -21,7 +21,7 @@ namespace XamarinTest.UWP
         {
             this.InitializeComponent();
 
-            LoadApplication(new XamarinTest.App());
+            LoadApplication(new XamarinTravelApp.App());
         }
     }
 }

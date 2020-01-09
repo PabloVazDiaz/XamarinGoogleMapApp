@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
-using XamarinTest.Model;
+using XamarinTravelApp.Model;
 
-namespace XamarinTest
+namespace XamarinTravelApp
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class PostDetailPage : ContentPage

@@ -11,9 +11,9 @@ using Plugin.Permissions.Abstractions;
 using Plugin.Geolocator;
 using Plugin.Geolocator.Abstractions;
 using SQLite;
-using XamarinTest.Model;
+using XamarinTravelApp.Model;
 
-namespace XamarinTest
+namespace XamarinTravelApp
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class MapPage : ContentPage

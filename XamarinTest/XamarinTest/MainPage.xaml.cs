@@ -5,13 +5,16 @@ using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 
-namespace XamarinTest
+namespace XamarinTravelApp
 {
     public partial class MainPage : ContentPage
     {
         public MainPage()
         {
             InitializeComponent();
+
+            var assembly = typeof(MainPage);
+            iconImage.Source = ImageSource.FromResource("XamarinGoogleMapApp.Assets.Images.plane.png", assembly);
         }
 
         private void LoginButton_Clicked(object sender, EventArgs e)
